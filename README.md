@@ -39,7 +39,7 @@ From my security point of view, the only data we should trust is the identity pr
 
 1. A random's person data?
 
-When I use the photo app to view pictures from `random-person.pod.org` the app cannot assume anything about the data. If `random-person` is malicious and has a fake username `foaf:name "<script>alert(1)</script>"`, we must make sure this is not interpreted as html but only displayed to the user. The same applies to image descriptions, image data but even metadata such as "last modified" and co.
+When I use the photo app to view pictures from `random-person.pod.org` the app cannot assume anything about the data. If `random-person` is malicious and has a fake username `foaf:name "<script>alert(1)</script>"`, we must make sure this is not interpreted as html but only displayed to the user as text (see the Examples section below for how). The same applies to image descriptions, image data but even metadata such as "last modified" and co.
 
 2. My own data?
 
