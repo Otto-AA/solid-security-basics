@@ -139,6 +139,7 @@ Thus, do not host applications on Solid pods, do host them on their own domain. 
 ## Further readings
 
 - [OWASP Secure Coding Practices-Quick Reference Guide](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)
+- [OWASP XSS Prevention Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 - [A Prospective Analysis of Security Vulnerabilities within Link Traversal-Based Query Processing](https://rubensworks.github.io/article-ldtraversal-security-short/)
 - And a lot more about secure coding, you can google it and add it here if you find interesting articles
 
