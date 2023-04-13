@@ -45,11 +45,11 @@ When I use the photo app to view pictures from `random-person.pod.org` the app c
 
 If we view pictures on our own pod, the application should still not trust the data. As we can see in the diagram above, we can give other people access to our pod. With access control we limit it to specific resources and folders. Malicious agents could add images to your pod with a `img:description "<script>alert(1)</script>"` description, which our apps must not interpret as html.
 
-4. URL params?
+3. URL params?
 
 This is not solid specific, however I thought it's worth a mention. If your application uses URL params like `/app?file=example.org/file&filename=pizza`, you must treat this as untrusted data. For instance, a malicious agent could get the user to open `/app?file=example.org&filename=<script>alert(1)</script>` and if the filename is added carelessly to the html it will execute the script on page load.
 
-5. The Solid Specification?
+4. The Solid Specification?
 
 We need the solid specification to write apps that work with all kind of pod providers. However, we should not trust servers to perfectly implement it for two reasons: (1) also servers have bugs, and (2) malicious pod providers can do whatever they want.
 
