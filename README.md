@@ -47,7 +47,7 @@ If we view pictures on our own pod, the application should still not trust the d
 
 4. URL params?
 
-This is not solid specific, however I thought it's worth a mention. If you're application uses URL params like `/app?file=example.org/file&filename=pizza`, you must treat this as untrusted data. For instance, a malicious agent could get the user to open `/app?file=example.org&filename=<script>alert(1)</script>` and if the filename is added carelessly to the html it will execute the script on page load.
+This is not solid specific, however I thought it's worth a mention. If your application uses URL params like `/app?file=example.org/file&filename=pizza`, you must treat this as untrusted data. For instance, a malicious agent could get the user to open `/app?file=example.org&filename=<script>alert(1)</script>` and if the filename is added carelessly to the html it will execute the script on page load.
 
 5. The Solid Specification?
 
@@ -128,7 +128,7 @@ In linked data, any file can claim anything about other files and actors. For in
 
 In particular, if we collect data from multiple files and add all the information to one dataset, we don't know anymore who claimed which statements. A statement `Alice :hasAddress "Los Angeles"` could origin from Alice's pod but also from Bob's pod.
 
-Instead, we must treat data with respect to who is able to write it. If we read the address from `alice.pod.org/profile/card#me` we likely can trust it, we assume only Alice can write there. If we read it from `alice.pod.org/inbox/` or `bob.pod.org/profile/card#me` we likely cannot trust it. This also depends on how much you rely on the integrity of this address: Do you only use it as the inital position on the map, or is it the destination of the shipment?.
+Instead, we must treat data with respect to who is able to write it. If we read the address from `alice.pod.org/profile/card#me` we likely can trust it, we assume only Alice can write there. If we read it from `alice.pod.org/inbox/` or `bob.pod.org/profile/card#me` we likely cannot trust it. This also depends on how much you rely on the integrity of this address: Do you only use it as the initial position on the map, or is it the destination of a package shipment?
 
 ## Hosting applications
 
