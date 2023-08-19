@@ -134,7 +134,7 @@ Instead, we must treat data with respect to who is able to write it. If we read 
 
 There's a lot more to say about this, however one important principle is: do not host your application on the same domain where potentially untrusted html is served. If another application runs on the same domain it can get pretty much full access over your application (and make authenticated requests, etc).
 
-Thus, do not host applications on Solid pods, do host them on their own domain. From my point of view, github.io is a good start if you don't have the resources to manage your own website, keep in mind though that all projects from the same organization run under the same domain.
+Thus, do not host applications on Solid pods, do host them on their own domain. You could host them on your own server, or for instance on [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), [Render](https://render.com/), etc. If you publish via github pages (github.io), keep in mind that all projects from the same organization run under the same domain and thus can access each other.
 
 ## Further readings
 
