@@ -35,6 +35,8 @@ In Solid apps we use data to for various purposes. When we use the data, we shou
 
 TL;DR: Only data from the identity provider, everything else needs to be treated with care.
 
+Note: For simplicity, the topic of digital signatures is left out here, even though it could be useful in some use cases.
+
 From my security point of view, the only data we should trust is the identity provider. The identity provider can create valid authentication tokens for their users, so they already have full control over anything the user has access to. For other agents, such as other users or even pod providers, they only have partial access initially and could gain more access by exploiting your application. Here's a list of what you should not trust, or only trust to some extent:
 
 1. A random's person data?
